@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再次遇见 · 球探笔记</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f3ee;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            color: #3d392f;
+            line-height: 1.8;
+            padding: 2.4rem 1.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .page {
+            max-width: 760px;
+            width: 100%;
+            background: #fcfaf7;
+            padding: 2.8rem 2.4rem;
+            border-radius: 24px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        @media (max-width: 580px) {
+            .page {
+                padding: 1.8rem 1.2rem;
+            }
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.3rem;
+            color: #2d2a22;
+            border-bottom: 1px solid #e2dbd2;
+            padding-bottom: 0.6rem;
+        }
+
+        .subhead {
+            font-size: 1.05rem;
+            color: #7e7568;
+            margin: 0.8rem 0 1.6rem 0;
+            font-style: italic;
+            border-left: 3px solid #cbb7a4;
+            padding-left: 1rem;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 1.8rem;
+            color: #4f4940;
+        }
+
+        .intro strong {
+            font-weight: 500;
+            color: #2d2a22;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            text-align: justify;
+            word-break: break-word;
+        }
+
+        .pull-quote {
+            background: #f1ebe5;
+            padding: 1.2rem 1.8rem;
+            margin: 2rem 0 2rem 0;
+            border-radius: 20px;
+            font-size: 1.05rem;
+            color: #3a352c;
+            border-left: 6px solid #b8a48f;
+            font-style: normal;
+            box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .pull-quote::before {
+            content: "📌 ";
+            font-style: normal;
+        }
+
+        .block-tip {
+            background: #ede6de;
+            border-radius: 18px;
+            padding: 1.2rem 1.6rem;
+            margin: 1.8rem 0 2rem 0;
+            border: 1px solid #dcd2c7;
+            display: flex;
+            gap: 0.8rem;
+            align-items: flex-start;
+        }
+
+        .block-tip .icon {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            flex-shrink: 0;
+        }
+
+        .block-tip .text {
+            font-size: 1rem;
+        }
+
+        .block-tip .text strong {
+            color: #2d2a22;
+        }
+
+        .faq-mini {
+            margin: 2.4rem 0 1.2rem 0;
+            border-top: 1px solid #e2dbd2;
+            padding-top: 1.6rem;
+        }
+
+        .faq-mini h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            color: #2d2a22;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+
+        .faq-item .q {
+            font-weight: 500;
+            color: #4f4940;
+        }
+
+        .faq-item .a {
+            padding-left: 1rem;
+            color: #5e5549;
+            border-left: 2px dotted #cec1b3;
+            margin-top: 0.2rem;
+            font-size: 0.98rem;
+        }
+
+        .visit-note {
+            margin: 2.2rem 0 0.8rem 0;
+            padding: 1.2rem 0 0.4rem 0;
+            border-top: 1px solid #e2dbd2;
+            font-size: 1.05rem;
+            text-align: center;
+            color: #4f4940;
+        }
+
+        a {
+            color: #7f6b58;
+            text-decoration: none;
+            border-bottom: 1px solid #d3c4b6;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 400;
+        }
+
+        a:hover {
+            color: #4f3f2f;
+            border-bottom-color: #7f6b58;
+        }
+
+        .footer {
+            margin-top: 2.4rem;
+            font-size: 0.85rem;
+            color: #a89f92;
+            text-align: center;
+            border-top: 1px solid #e8e0d7;
+            padding-top: 1.4rem;
+        }
+
+        .footer span {
+            display: inline-block;
+            margin: 0 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>再访·球探</h1>
+        <div class="subhead">收藏一处安静的观察角，持续听见绿茵场的呼吸</div>
+
+        <p class="intro">
+            有些页面，打开过一次便留在书签里。不是因为它热闹，而是因为它准确、
+            不喧哗，像一位老朋友在角落里记着笔记。我说的正是<strong>球探</strong>——
+            一个让人愿意反复回来坐一坐的地方。
+        </p>
+
+        <p>
+            第一次遇见<a href="https://cn-cns-qiutan.com">球探</a>，是在一个赛程密集的周末。
+            直播表、积分变化、球员状态……信息像潮水一样涌来，但页面的呼吸却很从容。
+            没有弹窗催促你点击，没有浮夸的标题拉扯注意力。只是把足球世界里的线索，
+            一条一条摆好，等你来翻。那天深夜我关掉页面之前，默默把它加入了收藏夹。
+        </p>
+
+        <p>
+            之后每次想确认转会传闻、对比两边近期战绩，或者只是单纯想看看今晚有哪些值得留意的对阵，
+            我总会先打开那个书签。渐渐地，“先看<a href="https://cn-cns-qiutan.com">球探</a>”成了习惯。
+            不是因为它多特别，而是因为它不消耗你——它提供信息，却不透支你的耐心。
+            在信息过载的年代，这种克制反而成了最珍贵的品质。
+        </p>
+
+        <div class="pull-quote">
+            真正好用的工具，往往安静到让你忘记它的存在，只记得它帮你省下的时间。
+        </div>
+
+        <p>
+            后来我开始留意它的更新节奏。数据很新，但从不以“突发”“震惊”之类的字眼刷存在感；
+            页面偶尔调整布局，但核心的导航和关键数据始终清晰可循。
+            这种稳定性，对于常看比赛的人来说太重要了——你不需要每次重新学习怎么使用它。
+            就像一本翻熟了的笔记本，你知道该翻到哪一页。
+        </p>
+
+        <p>
+            也有朋友问我，为什么总推荐同一个地方。我说，不是推荐，是分享一个收藏。
+            如果你也常常需要快速了解球队近况、赛程走势，或者只是想找个干净的地方
+            安静地浏览足球信息，不妨也把<a href="https://cn-cns-qiutan.com">球探</a>放进取书签。
+            它不向你索取注册，不轰炸你的感官，只是安静地站在那个网址里，等你再次打开。
+        </p>
+
+        <div class="block-tip">
+            <div class="icon">🔖</div>
+            <div class="text">
+                <strong>再次访问的提示</strong><br>
+                如果你是用移动设备浏览，建议直接添加到主屏幕；如果是桌面浏览器，
+                把它放在书签栏顺手的位置。这样每次想看球赛信息，都能一步到达。
+            </div>
+        </div>
+
+        <div class="faq-mini">
+            <h3>几个你可能想问的</h3>
+            <div class="faq-item">
+                <div class="q">Q: 需要注册或登录才能用吗？</div>
+                <div class="a">A: 不用。直接打开就能浏览核心内容，没有强制注册或关注。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">Q: 信息更新快不快？</div>
+                <div class="a">A: 赛程和实时数据跟进比较及时，日常浏览足够用了。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">Q: 适合长期使用吗？</div>
+                <div class="a">A: 从个人体验来说，半年下来功能稳定，没有出现大的变动或退化。</div>
+            </div>
+        </div>
+
+        <div class="visit-note">
+            📍 你可以随时回来 — 收藏夹里那个安静的坐标<br>
+            <span style="font-size: 1.1rem; display: inline-block; margin-top: 0.3rem;">
+                <a href="https://cn-cns-qiutan.com">球探</a>
+            </span>
+        </div>
+
+        <div class="footer">
+            <span>· 持续关注 · 不打扰 · 安静地看 ·</span>
+        </div>
+    </div>
+</body>
+</html>
